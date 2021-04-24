@@ -2,7 +2,10 @@
 
 buildscript {
     repositories {
+//        /com/libyuv/util/libyuv
+        maven{url 'https://raw.githubusercontent.com/ptliao/LQRLibyuv/master/vendor'}
         jcenter()
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
         maven {
             url 'https://maven.google.com/'
             name 'Google'
@@ -18,7 +21,9 @@ buildscript {
 
 allprojects {
     repositories {
+        maven{url 'https://raw.githubusercontent.com/ptliao/LQRLibyuv/master/vendor'}
         jcenter()
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
         maven {
             url 'https://maven.google.com/'
             name 'Google'
